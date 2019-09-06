@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SAX-Node extension for KNIME Workbench
+Bundle-SymbolicName: uk.ac.reading.cs.knime.sax;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: sax.jar
+Bundle-Activator: uk.ac.reading.cs.knime.sax.SAXNodePlugin
+Bundle-Vendor: Ryan Faulkner
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core,
+ org.knime.workbench.repository,
+ org.knime.base,
+ org.knime.core,
+ org.knime.ext.jfreechart
+Bundle-ActivationPolicy: lazy
+Export-Package: uk.ac.reading.cs.knime.sax
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+
