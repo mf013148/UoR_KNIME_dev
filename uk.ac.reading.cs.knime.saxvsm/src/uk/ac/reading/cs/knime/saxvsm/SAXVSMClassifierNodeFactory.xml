@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<knimeNode icon="./lisa_sax.gif" type="Predictor" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+    <name>SAX-VSM Classifier</name>
+    
+    <shortDescription>
+        Time series classification using the SAX Discretisation transform via a Sliding window in order to construct a Bag of Words characterising a class using TFIDF to form class-characteristic vectors for identification and classification.
+    </shortDescription>
+    
+    <fullDescription>
+        <intro>SAX is the first symbolic representation for time series that allows for dimensionality reduction and indexing with a lower-bounding distance measure.</intro>
+                
+        <option name="Sliding Window Size">Size of Sliding Window</option>
+        <option name="PAA Word Size">Size of PAA word</option>
+        <option name="Alphabet Size">Size of Alphabet</option>
+    	<option name="Numerosity Reduction Strategy">Numerosity Reduction Strategy</option>
+    	<option name="Normalisation Threshold">Normalisation Threshold</option>
+    </fullDescription>
+    
+    <ports>
+        <inPort index="0" name="Training Data">Training time series</inPort>
+        <inPort index="1" name="Testing Data">Testing time series</inPort>
+        <outPort index="0" name="Appended Class Prediction Table">Updated table with predictions</outPort>
+        <outPort index="1" name="Confusion Matrix">Predicted vs. Actual class labels</outPort>
+    </ports>
+</knimeNode>

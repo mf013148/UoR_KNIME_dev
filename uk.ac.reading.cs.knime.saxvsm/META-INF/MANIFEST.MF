@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SAXVSMClassifier-Node extension for KNIME Workbench
+Bundle-SymbolicName: uk.ac.reading.cs.knime.saxvsm;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: saxvsmclassifier.jar, joda-time-2.4.jar
+Bundle-Activator: uk.ac.reading.cs.knime.saxvsm.SAXVSMClassifierNodePlugin
+Bundle-Vendor: Ryan Faulkner
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core,
+ org.knime.workbench.repository,
+ org.knime.base,
+ org.knime.core
+Bundle-ActivationPolicy: lazy
+Export-Package: uk.ac.reading.cs.knime.saxvsm
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+
