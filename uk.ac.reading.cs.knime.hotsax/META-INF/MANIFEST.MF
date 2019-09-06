@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HotSAX-Node extension for KNIME Workbench
+Bundle-SymbolicName: uk.ac.reading.cs.knime.hotsax;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: hotsax.jar, joda-time-2.4.jar
+Bundle-Activator: uk.ac.reading.cs.knime.hotsax.HotSAXNodePlugin
+Bundle-Vendor: Ryan Faulkner
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core,
+ org.knime.workbench.repository,
+ org.knime.base,
+ org.knime.core,
+ org.knime.ext.jfreechart
+Bundle-ActivationPolicy: lazy
+Export-Package: uk.ac.reading.cs.knime.hotsax;
+  uses:="org.osgi.framework,
+   org.eclipse.core.runtime,
+   org.knime.core.node.defaultnodesettings,
+   org.knime.core.data,
+   org.knime.core.node"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+

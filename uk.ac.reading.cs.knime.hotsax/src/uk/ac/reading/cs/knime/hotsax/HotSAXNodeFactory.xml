@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./lisa_sax.gif" type="Visualizer" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+    <name>HOTSAX</name>
+    
+    <shortDescription>
+        Finds time series discords; maximally different subsequences within a time series.
+    </shortDescription>
+    
+    <fullDescription>
+        <intro>SAX is the first symbolic representation for time series that allows for dimensionality reduction and indexing with a lower-bounding distance measure.</intro>
+        
+        <option name="Sliding Window Size">Size of Sliding Window</option>
+        <option name="PAA Word Size">Size of PAA word</option>
+        <option name="Alphabet Size">Size of Alphabet</option>
+    	<option name="Numerosity Reduction Strategy">Numerosity Reduction Strategy</option>
+    	<option name="Normalisation Threshold">Normalisation Threshold</option>
+    </fullDescription>
+    
+    <ports>
+        <inPort index="0" name="Time Series Data">Raw Time Series data as a table</inPort>
+        <inPort index="1" name="SAX String Data">SAX representation of Time Series as a table</inPort>
+        <outPort index="0" name="Discord Records">Anomalies in the presented Time Series</outPort>
+    </ports>    
+    <views>
+        <view index="0" name="Discords">Normalised time series with discords highlighted</view>
+    </views>
+</knimeNode>
